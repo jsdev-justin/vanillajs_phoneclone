@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>VanillaJS Phone-GUI</title>
+</head>
+<body>
+    <div class="header text-center">
+      <h1>Javascript Pl@y-Around</h1>
+    </div>
+    <h5 class="text-center">Adjust Phone Color</h5>
+    <div class="pallette flex space-evenly">
+        <div class="form-div">
+            <label for="r">R</label>
+            <input type="range" name="r">
+        </div>
+        <div class="form-div">
+            <label for="g">G</label>
+            <input type="range" name="g">                        
+        </div>
+        <div class="form-div">
+            <label for="b">B</label>
+            <input type="range" name="b">                       
+         </div>
+        </div>
+    <div class="section">
+        <div class="container flex small-screen">
+                <div class="card center column">
+                    <div class="phone-div">
+                        <div class="screen">
+                            <div class="gui-screen grid">
+                                <!-- <img class='wallpaper' src="assets/android.jpeg" alt="img"/> -->
+                                <i class="folder center fa fa-folder"></i>
+                                <i class="folder center fa fa-folder"></i>
+                                <i class="folder center fa fa-folder"></i>
+                                <i class="folder center fa fa-folder"></i>
+                                <i class="folder center fa fa-folder"></i>
+                            </div>
+                            <div class="icons-row flex space-evenly">
+                                <li><i class='phone green fas fa-phone'></i></li>
+                                <li><i class='phonelist white fas fa-user'></i></li>
+                                <li><i class='apps gray fab fa-app-store'></i></li>
+                                <li><i class='comment green fas fa-comment'></i></li>
+                                <li><i class='chrome red fab fa-chrome'></i></li>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                    </div>
+                    
+                <div class="card center">
+
+
+                    <div class="phone-div">
+                        <div class="screen">
+                            <div class="gui-screen grid demo-screen center flex">
+                                <!-- <img class='wallpaper' src="assets/android.jpeg" alt="img"/> -->
+                                <!-- <i class="folder center fa fa-folder"></i>
+                                <i class="folder center fa fa-folder"></i>
+                                <i class="folder center fa fa-folder"></i>
+                                <i class="folder center fa fa-folder"></i>
+                                <i class="folder center fa fa-folder"></i> -->
+                            </div>
+                            <div class="icons-row flex space-evenly">
+                                <li><i class='phone green fas fa-phone'></i></li>
+                                <li><i class='phonelist white fas fa-user'></i></li>
+                                <li><i class='apps gray fab fa-app-store'></i></li>
+                                <li><i class='comment green fas fa-comment'></i></li>
+                                <li><i class='chrome red fab fa-chrome'></i></li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+
+    <footer class="footer text-center">
+        <p>Footer&copy;</p>
+    </footer>
+    
+
+    <script src="js/els.js"></script>
+    <script src="js/phonebtn.js"></script>
+    <script src="js/appsbtn.js"></script>
+    <script src="js/chromebtn.js"></script>
+    <script src="js/phonelistbtn.js"></script>
+    <script src="js/commentbtn.js"></script>
+</body>
+</html>

@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+    --primary-color:rgb(54, 211, 211);
+    --phoneR:0;
+    --phoneG:0;
+    --phoneB:0;
+}
+
+body{
+    height:100vh;
+    width:100vw;
+    display:flex;
+    flex-direction:column;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+
+.header, .footer{
+    padding:1em;
+    background-color:var(--primary-color);
+    text-shadow:1px 1px 8px white;
+}
+
+.phone-div{
+    width:65%;
+    height:75%;
+    /* border:2px solid blue; */
+    border-radius:10%;
+    padding:.5em;
+    /* background-color:rgb(var(--phoneR),var(--phoneG),var(--phoneB)) */
+    background-color:rgb(0,0,0);
+}
+
+.pallette{
+    width:95%;
+    margin:0 auto;
+    height:25px;
+    /* border:1px solid black; */
+    margin-top:1rem;
+}
+
+.screen{
+    height:85%;
+    width:95%;
+    margin:0 auto;
+    margin-top:15px; 
+    background:black;
+    border-top-left-radius:5%;
+    border-top-right-radius:5%;
+    border:1px solid black;
+
+
+}
+
+.demo-call{
+    height:100%;
+    width:100%;
+    background:black;
+    color:white;
+}
+
+.gui-screen{
+    height:90%;
+    width:100%;
+    background:lightgray;
+    background-image:url("/assets/android.jpeg");
+    background-size:contain;
+    border-top-left-radius:5%;
+    border-top-right-radius:5%;
+
+    /* border:1px solid black; */
+}
+
+/* .gui-screen-wrap{
+    height:100%;
+    width:100%;
+    background:orange;
+} */
+
+.folder{
+    color:white;
+    z-index:2;
+    font-size:25px;
+    flex:1;
+    cursor:pointer;
+}
+
+.folder:hover{
+    color:darkgray;
+}
+
+.icons-row{
+    border-top:1px solid black;
+    height:10%;
+    width:100%;
+    background:lightgray;
+}
+
+
+
+.footer{
+    padding:.5em;
+}
+
+.section{
+    flex-grow:1;
+}
+
+
+
+.container{
+    height:100%;
+    width:100%;
+    margin:0 auto;
+}
+
+.card{
+    width:100%;
+    height:100%;
+    border:1px solid red;
+}
+
+
+.text-center{
+    text-align:center;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+}
+
+.flex{
+    display:flex;
+}
+
+.cel{
+    background:lightgray;
+    height:100%;
+    width:100%;
+}
+
+.center{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.space-evenly{
+    display:flex;
+    align-items:center;
+    justify-content: space-evenly;
+}
+
+.space-between{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    font-size:13px;
+}
+
+.column{
+    flex-direction:column;
+    height:100%;
+    width:100%;
+}
+
+
+li{
+    list-style:none;
+}
+
+i{
+    cursor:pointer;
+}
+
+.silver{
+    background:silver;
+}
+
+.green{
+    color:green;
+}
+
+.red{
+    color:red;
+}
+
+.white{
+    color:white;
+}
+
+.gray{
+    color:gray;
+}
+
+.blue{
+    color:blue;
+}
+
+.yellow{
+    color:yellow;
+}
+
+
+
+
+/* chrome */
+
+.chrome-div{
+    height:100%;
+    width:100%;
+    background:lightgray;
+    border-top-left-radius:5%;
+    border-top-right-radius:5%;
+    
+}
+
+.browser{
+    width:90%;
+    height:5%;
+    margin:0 auto;
+    padding:.25em;
+    background:white;
+    border-radius:100px;
+    position:relative;
+    top:5px;
+    margin-bottom:2px;
+    font-size:8px;
+}
+
+.chrome-header{
+    font-size:10px;
+    padding:.25em;
+}
+
+.form-div{
+    text-align:center;
+}
+
+.mt-10{
+    margin-top:10px;
+}
+
+.mr-2{
+    margin-right:5px;
+}
+
+.ml-2{
+    margin-left:5px;
+}
+
+button{
+    border:none;
+    padding:.25em;
+}
+
+
+
+
+
+/*phoneBtn GUI */
+
+.phone-dial-parent-screen{
+    height:100%;
+    width:100%;
+}
+
+.phone-dial-screen{
+    height:35%;
+    background:black;
+}
+
+.phonelist-screen-gui{
+    height:100%;
+    width:100%;
+    overflow:auto;
+    font-size:10px;
+    text-align:center;
+    background:white;
+    /* background:red; */
+}
+
+.phonelist-screen > h5{
+    margin:0px;
+}
+
+.keypad{
+    height:65%;
+    width:100%;
+}
+
+.cel{
+    border:1px solid rgb(90, 85, 85);
+    cursor:pointer;
+}
+
+.cel:hover{
+    transform:scale(.99);
+}
+
+@media screen and (max-width:550px){
+    .container{
+        height:200vh;
+        overflow:auto;
+    }
+    .small-screen{
+        flex-direction:column;
+    }
+
+    .pallette{
+        display:flex;
+        flex-direction:column;
+    }
+}
+
+
+.color{
+    width:15px;
+    height:15px;
+    border-radius:50%;
+}
+
+.bg-red{
+    background:red;
+}
+
+.bg-blue{
+    background:blue;
+}
+
+.bg-gold{
+    background:gold;
+}
+
+.bg-green{
+    background:green;
+}
+
+.bg-purple{
+    background:purple;
+}
