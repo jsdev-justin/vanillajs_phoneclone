@@ -124,7 +124,7 @@ body{
 .card{
     width:100%;
     height:100%;
-    border:1px solid red;
+    /* border:1px solid red; */
 }
 
 
@@ -297,6 +297,14 @@ button{
     width:100%;
 }
 
+.p-1{
+    padding:.25em;
+}
+
+.p-2{
+    padding:1em;
+}
+
 .cel{
     border:1px solid rgb(90, 85, 85);
     cursor:pointer;
@@ -346,4 +354,13 @@ button{
 
 .bg-purple{
     background:purple;
+}
+
+
+
+.texts-screen{
+    height:100%;
+    width:100%;
+    background:lightgray;
+    overflow:auto;
 }

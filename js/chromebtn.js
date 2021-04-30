@@ -1,7 +1,7 @@
 
 
 chromeBtn.onclick=()=>{
-
+    screenDOM.classList.remove('grid')
     var html = `<div class='chrome-div'>
             <div class='browser'>https://www.google.com</div>
              <div class='chrome-header flex space-between p-1'>

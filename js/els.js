@@ -1,4 +1,4 @@
-var phone = document.querySelector(".phone-div")
+var phone = document.querySelectorAll(".phone-div")
 
 var chromeBtn = document.querySelector(".chrome")
 var phoneBtn = document.querySelector(".phone")
@@ -62,7 +62,9 @@ rangeInputs.forEach(input=>{
 
         }
         console.log(`R:${phoneR},G:${phoneG},B:${phoneB}`)
-        phone.style.backgroundColor=`rgb(${phoneR},${phoneG},${phoneB})`
+        phone.forEach(p=>{
+            p.style.backgroundColor=`rgb(${phoneR},${phoneG},${phoneB})`
+        })
 
     }
 })
